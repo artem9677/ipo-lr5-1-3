@@ -1,12 +1,12 @@
-string  = open('text.txt','r',encoding='utf-8')
-out = open('output.txt','w',encoding='utf-8')
+string  = open('text.txt','r',encoding='utf-8') # открытие файла для чтения
+out = open('output.txt','w',encoding='utf-8') # открытие файла для записи
 
-i = 1
+i = 1 # номер строки 
 
-for line in string:
-    out.write(str(i) + " ")
-    out.write(line)
-    i+=1
+for line in string: 
+    out.write(str(i) + " ") # запись номера строки
+    out.write(line) # запись самой строки
+    i+=1 # переход к новому номеру строки
 
-string.close()
+string.close() # закрытие файлов
 out.close()
